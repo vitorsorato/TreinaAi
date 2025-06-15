@@ -11,7 +11,7 @@ import SwiftUI
 struct TreinaAiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WorkoutListView()
         }
     }
 }
