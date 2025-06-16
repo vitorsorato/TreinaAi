@@ -109,7 +109,7 @@ struct ExerciseRow: View {
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                     if let weight = exercise.weight {
-                        Text("• \(String(format: "%.1f", weight)) kg")
+                        Text("\(String(format: "%.1f", weight)) kg")
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                     }

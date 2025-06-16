@@ -60,13 +60,8 @@ struct AddWorkoutGroupView: View {
     }
     
     private func saveWorkoutGroup() async {
-        do {
-            try await viewModel.addWorkoutGroup(name: name, suggestedDay: selectedDay)
-            dismiss()
-        } catch {
-            alertMessage = error.localizedDescription
-            isShowingAlert = true
-        }
+        await viewModel.addWorkoutGroup(name: name, suggestedDay: selectedDay)
+        dismiss()
     }
 }
 

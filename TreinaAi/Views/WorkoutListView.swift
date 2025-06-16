@@ -206,19 +206,8 @@ struct EditWorkoutGroupView: View {
     }
     
     private func saveWorkoutGroup() async {
-        do {
-            let updatedGroup = WorkoutGroup(
-                id: group.id,
-                name: name,
-                suggestedDay: selectedDay,
-                exercises: group.exercises
-            )
-            try await viewModel.updateWorkoutGroup(updatedGroup)
-            dismiss()
-        } catch {
-            alertMessage = error.localizedDescription
-            isShowingAlert = true
-        }
+        await viewModel.addWorkoutGroup(name: name, suggestedDay: selectedDay)
+        dismiss()
     }
 }
 

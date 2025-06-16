@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3BE33C112DFF5F980081BCDC /* TreinaAi Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3BE33BF12DFF5F960081BCDC /* TreinaAi Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		3BE33BBF2DFF41DC0081BCDC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,12 +25,50 @@
 			remoteGlobalIDString = 3BE33BAF2DFF41DB0081BCDC;
 			remoteInfo = TreinaAi;
 		};
+		3BE33BFE2DFF5F980081BCDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BE33BA82DFF41DB0081BCDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BE33BF02DFF5F960081BCDC;
+			remoteInfo = "TreinaAi Watch Watch App";
+		};
+		3BE33C082DFF5F980081BCDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BE33BA82DFF41DB0081BCDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BE33BF02DFF5F960081BCDC;
+			remoteInfo = "TreinaAi Watch Watch App";
+		};
+		3BE33C0F2DFF5F980081BCDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BE33BA82DFF41DB0081BCDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BE33BF02DFF5F960081BCDC;
+			remoteInfo = "TreinaAi Watch Watch App";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3BE33C152DFF5F980081BCDC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3BE33C112DFF5F980081BCDC /* TreinaAi Watch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3BE33BB02DFF41DB0081BCDC /* TreinaAi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreinaAi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE33BBE2DFF41DC0081BCDC /* TreinaAiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreinaAiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE33BC82DFF41DC0081BCDC /* TreinaAiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreinaAiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BE33BF12DFF5F960081BCDC /* TreinaAi Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TreinaAi Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BE33BFD2DFF5F980081BCDC /* TreinaAi Watch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TreinaAi Watch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BE33C072DFF5F980081BCDC /* TreinaAi Watch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TreinaAi Watch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -43,6 +85,21 @@
 		3BE33BCB2DFF41DC0081BCDC /* TreinaAiUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TreinaAiUITests;
+			sourceTree = "<group>";
+		};
+		3BE33BF22DFF5F960081BCDC /* TreinaAi Watch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "TreinaAi Watch Watch App";
+			sourceTree = "<group>";
+		};
+		3BE33C002DFF5F980081BCDC /* TreinaAi Watch Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "TreinaAi Watch Watch AppTests";
+			sourceTree = "<group>";
+		};
+		3BE33C0A2DFF5F980081BCDC /* TreinaAi Watch Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "TreinaAi Watch Watch AppUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +126,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3BE33BEE2DFF5F960081BCDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BE33BFA2DFF5F980081BCDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BE33C042DFF5F980081BCDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +156,9 @@
 				3BE33BB22DFF41DB0081BCDC /* TreinaAi */,
 				3BE33BC12DFF41DC0081BCDC /* TreinaAiTests */,
 				3BE33BCB2DFF41DC0081BCDC /* TreinaAiUITests */,
+				3BE33BF22DFF5F960081BCDC /* TreinaAi Watch Watch App */,
+				3BE33C002DFF5F980081BCDC /* TreinaAi Watch Watch AppTests */,
+				3BE33C0A2DFF5F980081BCDC /* TreinaAi Watch Watch AppUITests */,
 				3BE33BB12DFF41DB0081BCDC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +169,9 @@
 				3BE33BB02DFF41DB0081BCDC /* TreinaAi.app */,
 				3BE33BBE2DFF41DC0081BCDC /* TreinaAiTests.xctest */,
 				3BE33BC82DFF41DC0081BCDC /* TreinaAiUITests.xctest */,
+				3BE33BF12DFF5F960081BCDC /* TreinaAi Watch Watch App.app */,
+				3BE33BFD2DFF5F980081BCDC /* TreinaAi Watch Watch AppTests.xctest */,
+				3BE33C072DFF5F980081BCDC /* TreinaAi Watch Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,10 +186,12 @@
 				3BE33BAC2DFF41DB0081BCDC /* Sources */,
 				3BE33BAD2DFF41DB0081BCDC /* Frameworks */,
 				3BE33BAE2DFF41DB0081BCDC /* Resources */,
+				3BE33C152DFF5F980081BCDC /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3BE33C102DFF5F980081BCDC /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				3BE33BB22DFF41DB0081BCDC /* TreinaAi */,
@@ -163,6 +249,74 @@
 			productReference = 3BE33BC82DFF41DC0081BCDC /* TreinaAiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		3BE33BF02DFF5F960081BCDC /* TreinaAi Watch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BE33C122DFF5F980081BCDC /* Build configuration list for PBXNativeTarget "TreinaAi Watch Watch App" */;
+			buildPhases = (
+				3BE33BED2DFF5F960081BCDC /* Sources */,
+				3BE33BEE2DFF5F960081BCDC /* Frameworks */,
+				3BE33BEF2DFF5F960081BCDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3BE33BF22DFF5F960081BCDC /* TreinaAi Watch Watch App */,
+			);
+			name = "TreinaAi Watch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "TreinaAi Watch Watch App";
+			productReference = 3BE33BF12DFF5F960081BCDC /* TreinaAi Watch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BE33BFC2DFF5F980081BCDC /* TreinaAi Watch Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BE33C162DFF5F980081BCDC /* Build configuration list for PBXNativeTarget "TreinaAi Watch Watch AppTests" */;
+			buildPhases = (
+				3BE33BF92DFF5F980081BCDC /* Sources */,
+				3BE33BFA2DFF5F980081BCDC /* Frameworks */,
+				3BE33BFB2DFF5F980081BCDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BE33BFF2DFF5F980081BCDC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3BE33C002DFF5F980081BCDC /* TreinaAi Watch Watch AppTests */,
+			);
+			name = "TreinaAi Watch Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "TreinaAi Watch Watch AppTests";
+			productReference = 3BE33BFD2DFF5F980081BCDC /* TreinaAi Watch Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3BE33C062DFF5F980081BCDC /* TreinaAi Watch Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BE33C192DFF5F980081BCDC /* Build configuration list for PBXNativeTarget "TreinaAi Watch Watch AppUITests" */;
+			buildPhases = (
+				3BE33C032DFF5F980081BCDC /* Sources */,
+				3BE33C042DFF5F980081BCDC /* Frameworks */,
+				3BE33C052DFF5F980081BCDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BE33C092DFF5F980081BCDC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3BE33C0A2DFF5F980081BCDC /* TreinaAi Watch Watch AppUITests */,
+			);
+			name = "TreinaAi Watch Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "TreinaAi Watch Watch AppUITests";
+			productReference = 3BE33C072DFF5F980081BCDC /* TreinaAi Watch Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +338,17 @@
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = 3BE33BAF2DFF41DB0081BCDC;
 					};
+					3BE33BF02DFF5F960081BCDC = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					3BE33BFC2DFF5F980081BCDC = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 3BE33BF02DFF5F960081BCDC;
+					};
+					3BE33C062DFF5F980081BCDC = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 3BE33BF02DFF5F960081BCDC;
+					};
 				};
 			};
 			buildConfigurationList = 3BE33BAB2DFF41DB0081BCDC /* Build configuration list for PBXProject "TreinaAi" */;
@@ -203,6 +368,9 @@
 				3BE33BAF2DFF41DB0081BCDC /* TreinaAi */,
 				3BE33BBD2DFF41DC0081BCDC /* TreinaAiTests */,
 				3BE33BC72DFF41DC0081BCDC /* TreinaAiUITests */,
+				3BE33BF02DFF5F960081BCDC /* TreinaAi Watch Watch App */,
+				3BE33BFC2DFF5F980081BCDC /* TreinaAi Watch Watch AppTests */,
+				3BE33C062DFF5F980081BCDC /* TreinaAi Watch Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +391,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3BE33BC62DFF41DC0081BCDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BE33BEF2DFF5F960081BCDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BE33BFB2DFF5F980081BCDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BE33C052DFF5F980081BCDC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +442,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3BE33BED2DFF5F960081BCDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BE33BF92DFF5F980081BCDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BE33C032DFF5F980081BCDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +475,21 @@
 			isa = PBXTargetDependency;
 			target = 3BE33BAF2DFF41DB0081BCDC /* TreinaAi */;
 			targetProxy = 3BE33BC92DFF41DC0081BCDC /* PBXContainerItemProxy */;
+		};
+		3BE33BFF2DFF5F980081BCDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BE33BF02DFF5F960081BCDC /* TreinaAi Watch Watch App */;
+			targetProxy = 3BE33BFE2DFF5F980081BCDC /* PBXContainerItemProxy */;
+		};
+		3BE33C092DFF5F980081BCDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BE33BF02DFF5F960081BCDC /* TreinaAi Watch Watch App */;
+			targetProxy = 3BE33C082DFF5F980081BCDC /* PBXContainerItemProxy */;
+		};
+		3BE33C102DFF5F980081BCDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BE33BF02DFF5F960081BCDC /* TreinaAi Watch Watch App */;
+			targetProxy = 3BE33C0F2DFF5F980081BCDC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -395,6 +620,7 @@
 				DEVELOPMENT_TEAM = 7CS96QS973;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TreinaAi;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -405,7 +631,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
@@ -434,6 +660,7 @@
 				DEVELOPMENT_TEAM = 7CS96QS973;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TreinaAi;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -444,7 +671,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
@@ -547,6 +774,147 @@
 			};
 			name = Release;
 		};
+		3BE33C132DFF5F980081BCDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7CS96QS973;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TreinaAi;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Nothie.TreinaAi;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nothie.TreinaAi.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+			};
+			name = Debug;
+		};
+		3BE33C142DFF5F980081BCDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7CS96QS973;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TreinaAi;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Nothie.TreinaAi;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Nothie.TreinaAi.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+			};
+			name = Release;
+		};
+		3BE33C172DFF5F980081BCDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7CS96QS973;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nothie.TreinaAi-Watch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TreinaAi Watch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TreinaAi Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.6;
+			};
+			name = Debug;
+		};
+		3BE33C182DFF5F980081BCDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7CS96QS973;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nothie.TreinaAi-Watch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TreinaAi Watch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TreinaAi Watch Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.6;
+			};
+			name = Release;
+		};
+		3BE33C1A2DFF5F980081BCDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7CS96QS973;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nothie.TreinaAi-Watch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "TreinaAi Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.6;
+			};
+			name = Debug;
+		};
+		3BE33C1B2DFF5F980081BCDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7CS96QS973;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nothie.TreinaAi-Watch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "TreinaAi Watch Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.6;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -582,6 +950,33 @@
 			buildConfigurations = (
 				3BE33BD92DFF41DC0081BCDC /* Debug */,
 				3BE33BDA2DFF41DC0081BCDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BE33C122DFF5F980081BCDC /* Build configuration list for PBXNativeTarget "TreinaAi Watch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BE33C132DFF5F980081BCDC /* Debug */,
+				3BE33C142DFF5F980081BCDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BE33C162DFF5F980081BCDC /* Build configuration list for PBXNativeTarget "TreinaAi Watch Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BE33C172DFF5F980081BCDC /* Debug */,
+				3BE33C182DFF5F980081BCDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BE33C192DFF5F980081BCDC /* Build configuration list for PBXNativeTarget "TreinaAi Watch Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BE33C1A2DFF5F980081BCDC /* Debug */,
+				3BE33C1B2DFF5F980081BCDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

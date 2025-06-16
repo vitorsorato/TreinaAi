@@ -22,6 +22,7 @@ class WorkoutViewModel: ObservableObject {
         if let encodedData = try? JSONEncoder().encode(workoutGroups) {
             userDefaults.set(encodedData, forKey: workoutGroupsKey)
         }
+        WorkoutSyncManager.shared.syncToWatch(workoutGroups)
     }
     
     func addWorkoutGroup(name: String, suggestedDay: String? = nil) async {
