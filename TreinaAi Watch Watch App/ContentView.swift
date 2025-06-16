@@ -37,6 +37,7 @@ struct ContentView: View {
 
 struct ExerciseListView: View {
     let group: WorkoutGroup
+    @StateObject private var imageManager = ImageManager.shared
     
     var body: some View {
         if group.exercises.isEmpty {
@@ -54,14 +55,15 @@ struct ExerciseListView: View {
                             .shadow(color: Color.black.opacity(0.10), radius: 4, x: 0, y: 1)
                         VStack(alignment: .center, spacing: 12) {
                             if let imageURL = exercise.imageURL {
-                                AsyncImage(url: imageURL) { image in
-                                    image
+                                if let imageData = imageManager.getImageData(for: imageURL),
+                                   let uiImage = UIImage(data: imageData) {
+                                    Image(uiImage: uiImage)
                                         .resizable()
                                         .scaledToFill()
                                         .frame(maxWidth: .infinity, minHeight: 100, maxHeight: 160)
                                         .clipped()
                                         .cornerRadius(16)
-                                } placeholder: {
+                                } else {
                                     Image(systemName: "dumbbell.fill")
                                         .font(.title2)
                                         .foregroundColor(.gray)
@@ -88,7 +90,7 @@ struct ExerciseListView: View {
                                         .font(.caption2)
                                         .foregroundColor(.secondary)
                                     if let weight = exercise.weight {
-                                        Text(" \(String(format: "%.1f", weight)) kg")
+                                        Text("• \(String(format: "%.1f", weight)) kg")
                                             .font(.caption2)
                                             .foregroundColor(.secondary)
                                     }

@@ -89,7 +89,7 @@ struct WorkoutGroupRow: View {
             HStack(spacing: 12) {
                 // Miniaturas das imagens dos exercícios (até 4)
                 HStack(spacing: -8) {
-                    let imageExercises = group.exercises.compactMap { $0.imageURL }.prefix(4)
+                    let imageExercises = group.exercises.compactMap { $0.imageURL }.prefix(3)
                     ForEach(Array(imageExercises.enumerated()), id: \ .offset) { idx, imageURL in
                         AsyncImage(url: imageURL) { image in
                             image

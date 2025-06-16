@@ -1,28 +1,73 @@
 import Foundation
 import WatchConnectivity
 
-class WorkoutSyncManager: NSObject, WCSessionDelegate {
+class WorkoutSyncManager: NSObject, ObservableObject {
     static let shared = WorkoutSyncManager()
-
+    private let session: WCSession
+    
     override init() {
+        self.session = WCSession.default
         super.init()
+        
         if WCSession.isSupported() {
-            WCSession.default.delegate = self
-            WCSession.default.activate()
+            session.delegate = self
+            session.activate()
         }
     }
-
-    // Envie os treinos para o Watch
-    func syncToWatch(_ groups: [WorkoutGroup]) {
-        if WCSession.default.isPaired && WCSession.default.isWatchAppInstalled {
-            if let data = try? JSONEncoder().encode(groups) {
-                try? WCSession.default.updateApplicationContext(["workoutGroups": data])
+    
+    func syncToWatch(_ workoutGroups: [WorkoutGroup]) {
+        guard session.activationState == .activated else { return }
+        
+        do {
+            let data = try JSONEncoder().encode(workoutGroups)
+            let message: [String: Any] = ["workoutGroups": data]
+            
+            if session.isReachable {
+                session.sendMessage(message, replyHandler: nil)
+            } else {
+                try session.updateApplicationContext(message)
+            }
+        } catch {
+            print("Error syncing workout groups: \(error)")
+        }
+    }
+    
+    func transferImage(_ imageData: Data, fileName: String) {
+        guard session.activationState == .activated else { return }
+        
+        let message: [String: Any] = ["imageData": imageData, "fileName": fileName]
+        
+        if session.isReachable {
+            session.sendMessage(message, replyHandler: nil)
+        } else {
+            do {
+                try session.updateApplicationContext(message)
+            } catch {
+                print("Error transferring image: \(error)")
             }
         }
     }
+}
 
-    // Delegate obrigatório (pode ficar vazio)
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {}
-    func sessionDidBecomeInactive(_ session: WCSession) {}
-    func sessionDidDeactivate(_ session: WCSession) {}
+extension WorkoutSyncManager: WCSessionDelegate {
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        if let error = error {
+            print("Session activation failed: \(error)")
+        }
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        print("Session became inactive")
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        print("Session deactivated")
+        session.activate()
+    }
+    
+    #if os(iOS)
+    func sessionWatchStateDidChange(_ session: WCSession) {
+        print("Watch state changed: \(session.activationState.rawValue)")
+    }
+    #endif
 } 
